@@ -18,7 +18,7 @@ We expect the QA system is to respond with something like this:
 
 Since 2017, transformer models have shown to outperform existing approaches for this task. Many variations of transformer models exist, including BERT, RoBERTA, XLNET. One of the newcomers to the group is ALBERT (A Lite BERT) which was published in September 2019. The research group claims that it outperforms BERT, with much less parameters (shorter training and inference time). 
 
-This tutorial demonstrates how you can fine-tune a transformer model for the task of QnA and use it for inference. For this tutorial, we will use the transformer library built by Hugging Face, which is an extremely nice implementation of the transformer models (including ALBERT) in both TensorFlow and PyTorch. You can also just download a fine tuned model [here](https://huggingface.co/models) (which I encourage in general to save money and reduce emissions), however for educational purposes we will train a small version ourselves. 
+This tutorial demonstrates how you can fine-tune a transformer model for the task of QnA and use it for inference. Note you can also skip the training step and just try out a pre trained model on the same dataset (save some time and carbon emissions). We will use the transformer library built by Hugging Face, which is an extremely nice implementation of the transformer models (including ALBERT) in both TensorFlow and PyTorch. 
 
 Note that the goal of this is not to build an optimised, production ready system, but to demonstrate the concept with as little code as possible. Therefore a lot of code will be retrofitted for this purpose. 
 
